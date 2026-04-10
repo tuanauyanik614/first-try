@@ -1,0 +1,76 @@
+body {
+    background-color: #e77082; /* PEMBE */
+    margin: 0;
+    font-family: Arial;
+
+    display: flex;
+    justify-content: center;  /* yatay ortalama */
+    align-items: center;      /* dikey ortalama */
+    height: 100vh;
+}
+
+/* Ortada küçük alan */
+.container {
+    width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* Kedi */
+#kedi {
+    width: 250px;
+    cursor: pointer;
+}
+
+/* Yazı */
+#yazi {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Zarf başlangıçta gizli */
+#zarf {
+    display: none;
+    margin-top: 100px;
+}
+
+#zarf img {
+    width: 300px;
+    cursor: pointer;
+}
+
+/* Mektup */
+#mektup {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.3); /* hafif şeffaf */
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+/* Butonlar */
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Kalpler */
+.kalp {
+    position: fixed;
+    font-size: 20px;
+    animation: yukari 3s linear forwards;
+}
+
+@keyframes yukari {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+}
